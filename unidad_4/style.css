@@ -1,0 +1,21 @@
+body {
+    margin-left: 2rem;
+    background-color: whitesmoke;
+    color: yellow;
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    background-color: red;
+    width: 23vw;
+    height: 23vw;
+    margin: .25rem;
+}
+
+.dos {
+    background-color: black;
+    color: white;
+}

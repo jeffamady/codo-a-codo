@@ -11,6 +11,21 @@ header {
     align-items: center;
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    margin: 2rem;
+    width: 70vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 header a {
     text-decoration: none;
     color: #0C0910;
@@ -18,34 +33,16 @@ header a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+a {
+    text-decoration: none;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    align-self: center;
-}
-
-form input {
-    border-radius: 1%;
-    text-align: center;
-    border: none;
-    border-bottom: #9882AC solid 0.4rem;
-    height: 2.5rem;
-    margin-bottom: 1rem;
-    color: #0C0910;
-}
-form button {
+button {
+    background-color: #e0d1f880;
+    color: #73648A;
     border: none;
     height: 3rem;
-    margin-top: 1rem;
-    background-color: #9882AC;
-    font-size: large;
-    color: #DBE9EE;
+    margin: .25rem;
 }

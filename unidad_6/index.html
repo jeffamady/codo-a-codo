@@ -9,16 +9,21 @@
     <title>BOOTSTRAP Unit 2</title>
 </head>
 <body>
+  <header>
+    <a href="../index.html">
+        <p><strong>Jeff N. Amady</strong> Codo a Codo Exercicios</p>
+    </a>
+</header>
     <div class="container">
         <form>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="nombreDeFila">Nombre de fila</label>
-                <input type="text" class="form-control" id="nombreDeFila">
+                <input type="text" class="form-control" id="nombreDeFila" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="apellido">Apellido</label>
-                <input type="text" class="form-control" id="apellido">
+                <input type="text" class="form-control" id="apellido" required>
               </div>
             </div>
             <div class="input-group has-validation">
@@ -31,7 +36,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="email">Correo electronico(opcional)</label>
+              <label for="email">Correo electrónico(opcional)</label>
               <input type="email" class="form-control" id="email" placeholder="you@email.com">
             </div>
             <div class="form-group">
@@ -39,12 +44,12 @@
               <input type="text" class="form-control" id="adress" placeholder="1234 Main St">
             </div>
             <div class="form-group">
-              <label for="adress">Direccion 2 (opcional)</label>
+              <label for="adress">Dirección 2 (opcional)</label>
               <input type="text" class="form-control" id="adress" placeholder="Apartamento o suite">
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="inputCity">Pais</label>
+                <label for="inputCity">País</label>
                 <select id="inputState" class="form-control">
                   <option selected>Escoger...</option>
                   <option>...</option>
@@ -58,20 +63,20 @@
                 </select>
               </div>
               <div class="form-group col-md-2">
-                <label for="inputZip">Codigo Postal</label>
+                <label for="inputZip">Código Postal</label>
                 <input type="text" class="form-control" id="inputZip">
               </div>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
-                La direccion de envio es la misma que mi direccion de facturacion
+                La dirección de envio es la misma que mi direccion de facturación
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
               <label class="form-check-label" for="defaultCheck2">
-                Guarde la informacion para la proxima vez
+                Guarde la información para la próxima vez
               </label>
             </div>
           </form>

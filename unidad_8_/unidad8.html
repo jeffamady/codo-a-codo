@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>JS Unidad 8</title>
 </head>
@@ -13,11 +14,13 @@
             <p><strong>Jeff N. Amady</strong> Forms</p>
         </a>
     </header>
-    <section>
-        <div class="info">
-            <p class="help">El email no puede ir vacio</p>
-        </div>
+    <section class="formSection">
+        
         <form action="#" method="post">
+            <div class="info">
+                <p class="help">El email no puede ir vacio</p>
+                <i class="fas fa-times close"></i>
+            </div>
             <!-- <label for="usuario">Usuario</label> -->
             <input type="text" name="usuario" id="usuario" placeholder="Su Usuario">
     
@@ -27,6 +30,23 @@
         </form>
 
     </section>
+    <footer>
+        <section class="social">
+            <a href="https://www.linkedin.com/in/jeff-noelson-amady-7a119a1b9/" target="blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:jeff02.jn@gmail.com?subject=Contact you from your site" target="blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://github.com/jeffamady" target="blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+
+            
+        </section>
+    </footer>
     <script src="./control.js"></script>
 </body>
 </html>

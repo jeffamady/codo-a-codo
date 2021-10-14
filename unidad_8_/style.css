@@ -57,12 +57,14 @@ form button {
     border-radius: 1%;
     width: 100%;
     margin-bottom: .5em;
-    /* height: 4em; */
+    height: 4em;
     color: #9882AC;
     border-top: #9882AC solid 0.4rem;
     background-color: rgb(255, 193, 193);
     text-align: center;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+
 }
 
 .close{

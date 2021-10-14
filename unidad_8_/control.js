@@ -5,15 +5,32 @@ const close = document.querySelector('.close');
 const usuario = document.getElementById('usuario');
 const clave = document.getElementById('clave');
 
+let visibleStyles = `
+    visibility:visible;
+    width:100%;
+    height:4em;
+    opacity:1;
+    transition:visibility .5s, opacity .5s linear;
+`;
+
+let invisibleStyles = `
+    visibility:hidden;
+    opacity:0.5;
+    transition:visibility 1.5s, opacity 1.5s linear;
+`;
+
+
+
 const closeInfo = () => {
-    divInfo.style.display = 'none';
+    divInfo.style= invisibleStyles;
 }
 close.onclick = closeInfo;
 
 const showInfo = info => {
     console.log(info)
-    divInfo.style.display = 'block'
+    divInfo.style = visibleStyles;
     help.innerHTML = info;
+    setTimeout(closeInfo, 9000)
 }
 
 let infoCallback = info =>
@@ -41,7 +58,6 @@ const setupInfo = () => {
 setupInfo();
 
 const toVerify = e => {
-    divInfo.style.display = 'block'
     if(usuario.value === '' || clave.value === '') {
         e.preventDefault();
         help.innerHTML = 'Ambos campos son obligatorios!'
@@ -57,6 +73,9 @@ const toVerify = e => {
         help.innerHTML = 'Nombre de usuario debe tener @';
 
     }
+    divInfo.style = visibleStyles;
+    setTimeout(closeInfo, 9000)
+
 }
 
 form.onsubmit = toVerify;

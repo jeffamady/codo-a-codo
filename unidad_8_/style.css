@@ -52,7 +52,7 @@ form button {
     color: #DBE9EE;
 }
 
-.info {
+.divInfo {
     position: relative;
     border-radius: 1%;
     width: 100%;
@@ -62,7 +62,7 @@ form button {
     border-top: #9882AC solid 0.4rem;
     background-color: rgb(255, 193, 193);
     text-align: center;
-    /* display: none; */
+    display: none;
 }
 
 .close{
